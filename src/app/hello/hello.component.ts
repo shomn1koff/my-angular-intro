@@ -1,11 +1,15 @@
 import { Component } from '@angular/core';
 import {FormsModule} from '@angular/forms';
+import {TuiInputModule} from '@taiga-ui/legacy';
+import {TuiButton} from '@taiga-ui/core';
 
 @Component({
   selector: 'app-hello',
   templateUrl: './hello.component.html',
   imports: [
-    FormsModule
+    FormsModule,
+    TuiInputModule,
+    TuiButton
   ],
   styleUrls: ['./hello.component.scss']
 })
