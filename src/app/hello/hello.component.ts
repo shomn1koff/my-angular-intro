@@ -11,6 +11,12 @@ import {FormsModule} from '@angular/forms';
 })
 export class HelloComponent {
   username: string = '';
+  message: string = 'Добро пожаловать!';
+  counter: number = 0;
+
+  incrementCounter(): void {
+    this.counter++;
+  }
 
   greet(): string {
     if (this.username.trim().length === 0) {
