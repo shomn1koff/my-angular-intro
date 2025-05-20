@@ -1,12 +1,11 @@
-<input [(ngModel)]="username" placeholder="Введите имя" />
-<input
-  [value]="username"
-  (input)="onInputChange($event)"
-  placeholder="Введите имя: (кастомный обработчик)"
->
-<h2>{{ greet() }}</h2>
-<p>{{message}}</p>
-<p>Счетчик: {{counter}}</p>
+<tui-input
+  [(ngModel)]="username"
+>Введи имя:</tui-input>
 <button
+  tuiButton
+  size="m"
+  appearance="primary"
   (click)="incrementCounter()"
 >Увеличить</button>
+<p>Привет, {{ username }}</p>
+<p>Счетчик: {{ counter }}</p>
