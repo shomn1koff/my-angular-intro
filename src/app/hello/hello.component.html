@@ -5,3 +5,8 @@
   placeholder="Введите имя: (кастомный обработчик)"
 >
 <h2>{{ greet() }}</h2>
+<p>{{message}}</p>
+<p>Счетчик: {{counter}}</p>
+<button
+  (click)="incrementCounter()"
+>Увеличить</button>
