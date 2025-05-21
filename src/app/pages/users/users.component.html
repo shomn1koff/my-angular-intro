@@ -1,1 +1,15 @@
-<p>users works!</p>
+<div class="users-container">
+  <h2>Users List</h2>
+  <div class="users-list">
+    <div *ngFor="let user of users" class="user-card">
+      <h3>{{ user.name }}</h3>
+      <p>Email: {{ user.email }}</p>
+      <p>Username: {{ user.username }}</p>
+    </div>
+  </div>
+  <tui-pagination
+    [length]="totalPages"
+    [(index)]="currentPage"
+    (indexChange)="onPageChange($event)"
+  ></tui-pagination>
+</div>
