@@ -1,0 +1,17 @@
+nav {
+  margin-bottom: 1rem;
+  a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: teal;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.main-content {
+  padding: 2rem;
+  min-height: 70vh;
+}
